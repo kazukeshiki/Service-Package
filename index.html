@@ -1,53 +1,98 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>M-Files Services Demo</title>
 
 <style>
 body{
     margin:0;
+    padding:40px;
     background:#0f172a;
     color:white;
     font-family:Arial,sans-serif;
-    padding:40px;
 }
 
 .container{
-    max-width:1000px;
+    max-width:1100px;
     margin:auto;
 }
 
 h1{
-    font-size:40px;
+    font-size:42px;
     margin-bottom:10px;
 }
 
 .subtitle{
     color:#94a3b8;
-    margin-bottom:30px;
+    margin-bottom:35px;
 }
 
 .card{
     background:#111827;
     border:1px solid #334155;
-    border-radius:12px;
-    margin-bottom:15px;
+    border-radius:14px;
+    margin-bottom:18px;
     overflow:hidden;
 }
 
 .header{
-    padding:20px;
+    padding:24px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
     cursor:pointer;
-    font-weight:bold;
+}
+
+.header h2{
+    margin:0;
+    font-size:22px;
+}
+
+.meta{
+    margin-top:8px;
+    color:#94a3b8;
+    font-size:14px;
+}
+
+.plus{
+    font-size:28px;
+    color:#94a3b8;
 }
 
 .content{
     display:none;
-    padding:0 20px 20px;
-    color:#cbd5e1;
+    padding:0 24px 24px;
+    border-top:1px solid #334155;
+}
+
+.section{
+    margin-top:24px;
+}
+
+.section h3{
+    color:#60a5fa;
+    margin-bottom:12px;
+}
+
+.section p,
+.section li{
+    line-height:1.8;
+    color:#d1d5db;
+}
+
+ul{
+    padding-left:20px;
+}
+
+.tip{
+    margin-top:24px;
+    padding:18px;
+    border-radius:10px;
+    background:#172554;
     line-height:1.7;
 }
 </style>
@@ -56,49 +101,243 @@ h1{
 <body>
 
 <div class="container">
-
-<h1>M-Files Services Demo</h1>
-<p class="subtitle">Standalone GitHub Pages version</p>
-
-<div class="card">
-    <div class="header">1. Opening & Discovery Recap</div>
-    <div class="content">
-        Establish business context and introduce the demo structure.
+    <h1>M-Files Services Demo</h1>
+    <div class="subtitle">
+        Full standalone vanilla HTML version for GitHub Pages
     </div>
-</div>
 
-<div class="card">
-    <div class="header">2. Contract & Document Findability</div>
-    <div class="content">
-        Demonstrate metadata driven search and version control.
+    
+    <div class="card">
+        <div class="header">
+            <div>
+                <h2>1. Opening & Discovery Recap</h2>
+                <div class="meta">INTRO • 5 min</div>
+            </div>
+            <div class="plus">+</div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h3>Objective</h3>
+                <p>Establish the business context for services organisations, frame document challenges as client risk and revenue risk, set the agenda.</p>
+            </div>
+
+            <div class="section">
+                <h3>Talking Points</h3>
+                <ul><li>Thank the room and reference something specific from discovery — a contract that was hard to locate, a compliance deadline that caused scrambling, a client deliverable that went out with the wrong version, or a staff onboarding bottleneck.</li><li>\</li><li></li><li>\</li><li></li><li>\</li><li></li><li>Confirm timing: 35 min demo, 5 min Q&A. Ask if there are specific scenarios — contract management, regulatory reporting, or client portal access — they want to make sure you cover.</li></ul>
+            </div>
+
+            <div class="section">
+                <h3>Actions</h3>
+                <ul><li>Open M-Files Desktop Client — logged in as 'Operations Manager - Diana'</li><li>Show Home View with pinned dashboards: My Active Matters/Projects, Expiring Contracts, Compliance Deadlines, Pending Approvals</li><li>Have M-Files Web Client open in browser tab for client-facing portal demo</li></ul>
+            </div>
+
+            <div class="tip">
+                <strong>Tip:</strong> The language matters in services. Use 'matters' for legal, 'projects' for consulting/engineering, 'policies' for financial services, 'assets' for facilities. Mirror their vocabulary from the first minute.
+            </div>
+        </div>
     </div>
-</div>
+    
+    <div class="card">
+        <div class="header">
+            <div>
+                <h2>2. Pain Point 1 — Contract & Document Findability</h2>
+                <div class="meta">FINDABILITY • 7 min</div>
+            </div>
+            <div class="plus">+</div>
+        </div>
 
-<div class="card">
-    <div class="header">3. Compliance & Policy Management</div>
-    <div class="content">
-        Show document workflows, approvals, and audit readiness.
+        <div class="content">
+            <div class="section">
+                <h3>Objective</h3>
+                <p>Show how metadata-driven search eliminates the shared drive / email attachment problem and makes any document findable in seconds regardless of where it was created or stored.</p>
+            </div>
+
+            <div class="section">
+                <h3>Talking Points</h3>
+                <ul><li>\</li><li></li><li>Pause for their answer. Typical responses: shared drive, email search, 'I ask the person who handled it', SharePoint (if they can find it), personal desktop folders.</li><li>\</li><li></li><li>\</li><li></li><li>Demonstrate: search 'Service Agreement — Apex Corporation'. Results appear instantly with metadata visible: Client, Document Type, Version, Status, Responsible Person, Expiry Date.</li><li>\</li><li> Filter by Status = Active, then by Expiry = next 90 days. \</li><li></li><li>\</li><li> Open a contract — show the check-out indicator and the lock preventing parallel edits. Show co-authoring notification. \</li><li></li></ul>
+            </div>
+
+            <div class="section">
+                <h3>Actions</h3>
+                <ul><li>Use Search bar — search 'Service Agreement Apex Corporation'</li><li>Show search results with metadata columns: Client, Type, Version, Status, Responsible, Expiry</li><li>Apply filters: Status = Active, Expiry = next 90 days</li><li>Show the filtered results — live contract renewal pipeline</li><li>Open a document — show check-out lock and version indicator</li><li>Show Version History tab — all previous versions with editor and timestamp</li><li>Right-click document → Show Related — reveal linked SOW, amendments, correspondence</li></ul>
+            </div>
+
+            <div class="tip">
+                <strong>Tip:</strong> If they mention they use SharePoint already: 'M-Files can index and surface your SharePoint content through the same metadata layer — you don't abandon SharePoint, you make it actually findable.'
+            </div>
+        </div>
     </div>
-</div>
+    
+    <div class="card">
+        <div class="header">
+            <div>
+                <h2>3. Pain Point 2 — Regulatory Compliance & Policy Management</h2>
+                <div class="meta">COMPLIANCE • 9 min</div>
+            </div>
+            <div class="plus">+</div>
+        </div>
 
-<div class="card">
-    <div class="header">4. Client & Project Document Management</div>
-    <div class="content">
-        Demonstrate client portal and deliverable tracking.
+        <div class="content">
+            <div class="section">
+                <h3>Objective</h3>
+                <p>Demonstrate the full policy and procedure lifecycle — draft, review, approval, controlled distribution, mandatory staff acknowledgement, and audit trail — relevant to ISO, financial regulation, data protection, or sector-specific compliance.</p>
+            </div>
+
+            <div class="section">
+                <h3>Talking Points</h3>
+                <ul><li>\</li><li></li><li>\</li><li></li><li>\</li><li></li><li>Create a new policy document from template. Fill metadata: Document Type = Policy, Category = Data Protection, Owner = Compliance, Version = 1.0.</li><li>Show the automatic workflow assignment: Draft → Legal Review → Compliance Approval → Published.</li><li>Trigger the review workflow — show Legal receiving a task with the document and a mandatory comment field. Approve and move to Compliance sign-off.</li><li>\</li><li> Show the acknowledgement tracking view — green ticks for acknowledged, amber for pending, red for overdue.</li><li>\</li><li></li><li>Show the Compliance Dashboard: policy coverage, acknowledgement rates, overdue reviews, and upcoming regulatory deadlines all in one view.</li></ul>
+            </div>
+
+            <div class="section">
+                <h3>Actions</h3>
+                <ul><li>File → New Document → Select 'Policy Template'</li><li>Fill metadata card — Type, Category, Owner, Effective Date</li><li>Save — show automatic workflow assigned</li><li>Submit for Legal Review — show reviewer receives task with mandatory comment</li><li>Approve through Legal → Compliance stages</li><li>Publish policy — show automatic distribution to staff group</li><li>Navigate to Acknowledgement Tracking view — green/amber/red per person</li><li>Open Compliance Dashboard — policy coverage, review calendar, regulatory deadlines</li></ul>
+            </div>
+
+            <div class="tip">
+                <strong>Tip:</strong> For financial services: ISO 27001, FCA/SEC compliance, AML policy management. For legal/consulting: ISO 9001 quality management, GDPR. For facilities management: ISO 41001, health & safety policy. Tailor the standard you name to their sector.
+            </div>
+        </div>
     </div>
-</div>
+    
+    <div class="card">
+        <div class="header">
+            <div>
+                <h2>4. Pain Point 3 — Client & Project Document Management</h2>
+                <div class="meta">CLIENT PROJECTS • 8 min</div>
+            </div>
+            <div class="plus">+</div>
+        </div>
 
+        <div class="content">
+            <div class="section">
+                <h3>Objective</h3>
+                <p>Show how M-Files organises documents by client and project, manages deliverable approval workflows, controls what clients can see via a secure portal, and links documents to CRM/project records.</p>
+            </div>
+
+            <div class="section">
+                <h3>Talking Points</h3>
+                <ul><li>\</li><li></li><li>\</li><li></li><li>Open a Client Record — e.g. 'Meridian Group'.</li><li>\</li><li></li><li>Show the Projects sub-view — open a specific project. Show the deliverable register with document status (Draft, Under Review, Client Approved, Archived).</li><li>\</li><li> Demonstrate the Client Portal in M-Files Web.</li><li>Switch to browser — show the client portal view. \</li><li></li><li>\</li><li></li><li>Show CRM integration: \</li><li></li></ul>
+            </div>
+
+            <div class="section">
+                <h3>Actions</h3>
+                <ul><li>Navigate to Clients view — open 'Meridian Group'</li><li>Show client record — linked contracts, projects, correspondence, compliance docs</li><li>Open active project — show deliverable register with status indicators</li><li>Trigger 'Send for Client Review' workflow — show link generation</li><li>Switch to browser — open Client Portal (external view)</li><li>Show client downloading approved deliverable</li><li>Demonstrate client uploading signed document — show it appearing in M-Files</li><li>Show CRM connector — new project in CRM auto-creates M-Files document structure</li></ul>
+            </div>
+
+            <div class="tip">
+                <strong>Tip:</strong> The client portal feature often surprises prospects. Let it land — pause after the external view and ask 'Is this different from what you're doing today?' Almost always yes.
+            </div>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="header">
+            <div>
+                <h2>5. Pain Point 4 — Knowledge Retention & Staff Transition</h2>
+                <div class="meta">KNOWLEDGE • 7 min</div>
+            </div>
+            <div class="plus">+</div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h3>Objective</h3>
+                <p>Demonstrate how M-Files preserves institutional knowledge, manages handovers when staff leave, and ensures new starters get access to the right documents from day one.</p>
+            </div>
+
+            <div class="section">
+                <h3>Talking Points</h3>
+                <ul><li>\</li><li></li><li>\</li><li></li><li>\</li><li></li><li>Demonstrate the Staff Transition workflow: mark a user as 'Departing'. Show M-Files generating a handover report — all documents, open tasks, and active matters assigned to that person.</li><li>Reassign ownership to the incoming person in bulk — show all documents and tasks updating instantly.</li><li>\</li><li></li><li>Show New Starter onboarding: \</li><li></li><li>\</li><li></li></ul>
+            </div>
+
+            <div class="section">
+                <h3>Actions</h3>
+                <ul><li>Navigate to User Management → mark user as Departing</li><li>Show auto-generated Handover Report — all assigned documents, tasks, active matters</li><li>Bulk-reassign ownership to incoming person</li><li>Log in as incoming person — show inherited matters view with full document context</li><li>Show New Starter setup — role-based permissions controlling document access</li><li>Navigate to Knowledge Base view — precedents, templates, best-practice documents searchable by topic</li></ul>
+            </div>
+
+            <div class="tip">
+                <strong>Tip:</strong> This segment resonates strongly with HR Directors and Senior Partners. If those roles are in the room, use a real scenario: 'Imagine your longest-serving account director handed in notice today — how much knowledge risk does that represent?' Then show the solution.
+            </div>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="header">
+            <div>
+                <h2>6. Platform Intelligence & Integrations</h2>
+                <div class="meta">PLATFORM • 4 min</div>
+            </div>
+            <div class="plus">+</div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h3>Objective</h3>
+                <p>Show AI-powered classification, Office 365 / Teams integration, and the M-Files API — demonstrate platform breadth quickly.</p>
+            </div>
+
+            <div class="section">
+                <h3>Talking Points</h3>
+                <ul><li>\</li><li></li><li>AI Document Classification: drag in an email attachment — a client contract PDF. Show M-Files reading it, identifying the client name, contract type, and counterparty, and suggesting the correct metadata. \</li><li></li><li>Microsoft 365 Integration: show the M-Files panel inside Outlook. \</li><li></li><li>Reporting: navigate to the Operations Dashboard. Show active matters by client, document turnaround times, compliance coverage, and staff workload by document volume. \</li><li></li></ul>
+            </div>
+
+            <div class="section">
+                <h3>Actions</h3>
+                <ul><li>Drag a client contract PDF onto M-Files — show AI metadata suggestion (client, type, counterparty)</li><li>Open Outlook — show M-Files panel sidebar in inbox</li><li>File an email against a client matter directly from Outlook</li><li>Open Word document — show M-Files metadata panel in the ribbon</li><li>Navigate to Operations Dashboard — active matters, turnaround times, compliance coverage</li></ul>
+            </div>
+
+            <div class="tip">
+                <strong>Tip:</strong> If they're heavy Microsoft 365 users, the Outlook and Teams integration is often the 'penny drop' moment. Emphasise: 'Your team works where they already work — M-Files fits around them, not the other way around.'
+            </div>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="header">
+            <div>
+                <h2>7. ROI Summary & Close</h2>
+                <div class="meta">CLOSE • 4 min</div>
+            </div>
+            <div class="plus">+</div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h3>Objective</h3>
+                <p>Summarise value against pain points, handle objections, agree next steps.</p>
+            </div>
+
+            <div class="section">
+                <h3>Talking Points</h3>
+                <ul><li>\</li><li></li><li>① Findability — 'Any document, any client, any matter — in seconds. Your team's billable time stops leaking into search bars.'</li><li>② Compliance & Policy — 'Every policy has a managed lifecycle. Staff acknowledgement is tracked and provable. Your next compliance audit is a dashboard, not a scramble.'</li><li>③ Client & Project Management — 'Every client relationship has a single, complete document view. Clients get a controlled portal. Deliverables have a tracked, auditable approval chain.'</li><li>④ Knowledge Retention — 'Institutional knowledge belongs to the organisation, not to individuals. Staff transitions are structured handovers, not fire drills.'</li><li>\</li><li></li><li>\</li><li></li><li>Open floor for questions.</li></ul>
+            </div>
+
+            <div class="section">
+                <h3>Actions</h3>
+                <ul><li>Display 4-pillar value summary</li><li>Have sector-specific one-page ROI summary ready to email</li><li>Prepare POC scoping worksheet — practice areas or service lines, document types, key workflows</li></ul>
+            </div>
+
+            <div class="tip">
+                <strong>Tip:</strong> Common objection: 'We're too small / our team won't adopt a new system.' Response: 'M-Files sits inside Outlook, Word, and Teams — your team doesn't change how they work, they just stop losing things. Adoption is the highest we see of any DMS platform because of the Microsoft integration.'
+            </div>
+        </div>
+    </div>
+    
 </div>
 
 <script>
-document.querySelectorAll('.header').forEach(function(item){
-    item.addEventListener('click', function(){
+document.querySelectorAll('.header').forEach(function(header){
+    header.addEventListener('click', function(){
         const content = this.nextElementSibling;
+        const plus = this.querySelector('.plus');
 
         if(content.style.display === 'block'){
             content.style.display = 'none';
+            plus.innerHTML = '+';
         } else {
             content.style.display = 'block';
+            plus.innerHTML = '−';
         }
     });
 });
