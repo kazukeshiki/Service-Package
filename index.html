@@ -7,62 +7,48 @@
 <title>M-Files Services Demo</title>
 
 <style>
-body {
-    margin: 0;
-    padding: 40px;
-    background: #0f172a;
-    color: white;
-    font-family: Arial, sans-serif;
+body{
+    margin:0;
+    background:#0f172a;
+    color:white;
+    font-family:Arial,sans-serif;
+    padding:40px;
 }
 
-.container {
-    max-width: 1000px;
-    margin: auto;
+.container{
+    max-width:1000px;
+    margin:auto;
 }
 
-h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+h1{
+    font-size:40px;
+    margin-bottom:10px;
 }
 
-.subtitle {
-    color: #94a3b8;
-    margin-bottom: 30px;
+.subtitle{
+    color:#94a3b8;
+    margin-bottom:30px;
 }
 
-.card {
-    background: #111827;
-    border: 1px solid #334155;
-    border-radius: 12px;
-    margin-bottom: 14px;
-    overflow: hidden;
+.card{
+    background:#111827;
+    border:1px solid #334155;
+    border-radius:12px;
+    margin-bottom:15px;
+    overflow:hidden;
 }
 
-.accordion {
-    width: 100%;
-    background: transparent;
-    color: white;
-    border: none;
-    padding: 20px;
-    text-align: left;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 16px;
+.header{
+    padding:20px;
+    cursor:pointer;
+    font-weight:bold;
 }
 
-.accordion small {
-    display: block;
-    color: #94a3b8;
-    margin-top: 6px;
-}
-
-.panel {
-    display: none;
-    padding: 0 20px 20px;
-    color: #cbd5e1;
-    line-height: 1.7;
+.content{
+    display:none;
+    padding:0 20px 20px;
+    color:#cbd5e1;
+    line-height:1.7;
 }
 </style>
 </head>
@@ -70,123 +56,49 @@ h1 {
 <body>
 
 <div class="container">
-    <h1>M-Files Services Demo</h1>
-    <div class="subtitle">
-        Standalone vanilla HTML version for GitHub Pages
-    </div>
 
-    
-    <div class="card">
-        <button class="accordion">
-            <span>
-                <strong>1. Opening &amp; Discovery Recap</strong>
-                <small>INTRO • 5 min</small>
-            </span>
-            <span>+</span>
-        </button>
+<h1>M-Files Services Demo</h1>
+<p class="subtitle">Standalone GitHub Pages version</p>
 
-        <div class="panel">
-            <p>Establish the business context for services organisations, frame document challenges as client risk and revenue risk, set the agenda.</p>
-        </div>
+<div class="card">
+    <div class="header">1. Opening & Discovery Recap</div>
+    <div class="content">
+        Establish business context and introduce the demo structure.
     </div>
-    
-    <div class="card">
-        <button class="accordion">
-            <span>
-                <strong>2. Pain Point 1 — Contract &amp; Document Findability</strong>
-                <small>FINDABILITY • 7 min</small>
-            </span>
-            <span>+</span>
-        </button>
+</div>
 
-        <div class="panel">
-            <p>Show how metadata-driven search eliminates the shared drive / email attachment problem and makes any document findable in seconds regardless of where it was created or stored.</p>
-        </div>
+<div class="card">
+    <div class="header">2. Contract & Document Findability</div>
+    <div class="content">
+        Demonstrate metadata driven search and version control.
     </div>
-    
-    <div class="card">
-        <button class="accordion">
-            <span>
-                <strong>3. Pain Point 2 — Regulatory Compliance &amp; Policy Management</strong>
-                <small>COMPLIANCE • 9 min</small>
-            </span>
-            <span>+</span>
-        </button>
+</div>
 
-        <div class="panel">
-            <p>Demonstrate the full policy and procedure lifecycle — draft, review, approval, controlled distribution, mandatory staff acknowledgement, and audit trail — relevant to ISO, financial regulation, data protection, or sector-specific compliance.</p>
-        </div>
+<div class="card">
+    <div class="header">3. Compliance & Policy Management</div>
+    <div class="content">
+        Show document workflows, approvals, and audit readiness.
     </div>
-    
-    <div class="card">
-        <button class="accordion">
-            <span>
-                <strong>4. Pain Point 3 — Client &amp; Project Document Management</strong>
-                <small>CLIENT PROJECTS • 8 min</small>
-            </span>
-            <span>+</span>
-        </button>
+</div>
 
-        <div class="panel">
-            <p>Show how M-Files organises documents by client and project, manages deliverable approval workflows, controls what clients can see via a secure portal, and links documents to CRM/project records.</p>
-        </div>
+<div class="card">
+    <div class="header">4. Client & Project Document Management</div>
+    <div class="content">
+        Demonstrate client portal and deliverable tracking.
     </div>
-    
-    <div class="card">
-        <button class="accordion">
-            <span>
-                <strong>5. Pain Point 4 — Knowledge Retention &amp; Staff Transition</strong>
-                <small>KNOWLEDGE • 7 min</small>
-            </span>
-            <span>+</span>
-        </button>
+</div>
 
-        <div class="panel">
-            <p>Demonstrate how M-Files preserves institutional knowledge, manages handovers when staff leave, and ensures new starters get access to the right documents from day one.</p>
-        </div>
-    </div>
-    
-    <div class="card">
-        <button class="accordion">
-            <span>
-                <strong>6. Platform Intelligence &amp; Integrations</strong>
-                <small>PLATFORM • 4 min</small>
-            </span>
-            <span>+</span>
-        </button>
-
-        <div class="panel">
-            <p>Show AI-powered classification, Office 365 / Teams integration, and the M-Files API — demonstrate platform breadth quickly.</p>
-        </div>
-    </div>
-    
-    <div class="card">
-        <button class="accordion">
-            <span>
-                <strong>7. ROI Summary &amp; Close</strong>
-                <small>CLOSE • 4 min</small>
-            </span>
-            <span>+</span>
-        </button>
-
-        <div class="panel">
-            <p>Summarise value against pain points, handle objections, agree next steps.</p>
-        </div>
-    </div>
-    
 </div>
 
 <script>
-const accordions = document.querySelectorAll(".accordion");
+document.querySelectorAll('.header').forEach(function(item){
+    item.addEventListener('click', function(){
+        const content = this.nextElementSibling;
 
-accordions.forEach(acc => {
-    acc.addEventListener("click", () => {
-        const panel = acc.nextElementSibling;
-
-        if(panel.style.display === "block") {
-            panel.style.display = "none";
+        if(content.style.display === 'block'){
+            content.style.display = 'none';
         } else {
-            panel.style.display = "block";
+            content.style.display = 'block';
         }
     });
 });
